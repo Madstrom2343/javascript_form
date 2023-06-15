@@ -1,0 +1,21 @@
+/* style.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+}
+
+.hide {
+    display: none;
+}
+
+.error {
+    display: block;
+    color: red;
+}
+
+#showErrors {
+    margin-bottom: 20px;
+}

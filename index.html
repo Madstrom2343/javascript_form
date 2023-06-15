@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <p>All fields are <strong>Required</strong></p>
+    <div id="errorShow"></div>
+    <form action="http://ctec.clark.edu/CTEC122/scripts/form_echo.php" method="POST">
+
+        <label for="firstName">First Name</label>
+        <br>
+        <input type="text" name="firstName" id="firstName">
+        <span id="firstNameError" class="hide">Error: First Name Required</span>
+        <br>
+        <br>
+        <label for="lastName">Last Name</label>
+        <br>
+        <input type="text" name="lastName" id="lastName">
+        <span id="lastNameError" class="hide">Error: Last Name Required</span>
+        <br>
+        <br>
+        <label for="address">Address</label>
+        <br>
+        <input type="text" name="address" id="address">
+        <span id="addressError" class="hide">Error: Address Required</span>
+        <br>
+        <br>
+        <label for="city">City</label>
+        <br>
+        <input type="text" name="city" id="city">
+        <span id="cityError" class="hide">Error: City Required</span>
+        <br>
+        <br>
+        <label for="state">State</label>
+        <br>
+        <select name="state" id="state">
+            <option hidden disabled selected value> -- select a state -- </option>
+            <option value="Wa">Washington</option>
+            <option value="Il">Illinois</option>
+            <option value="Ne">Nebraska</option>
+            <option value="NY">New York</option>
+        </select>
+        <span id="stateError" class="hide">Error: State Required</span>
+        <br>
+        <br>
+        <label for="product">Product</label>
+        <br>
+        <select name="product" id="product">
+            <option hidden disabled selected value> -- select a product -- </option>
+            <option value="pizza">Pizza</option>
+            <option value="pie">Pie</option>
+            <option value="salad">Salad</option>
+            <option value="taco">Taco</option>
+            <option value="chicken">Chicken</option>
+        </select>
+        <span id="productError" class="hide">Error: Product Required</span>
+        <br>
+        <br>
+        <label for="quantity">Quantity</label>
+        <br>
+        <input type="number" name="quantity" id="quantity" min="1" max="5">
+        <span id="quantityError" class="hide">Error: Quantity Required</span>
+        <br>
+        <br>
+        <div>Can we contact you by phone?</div> <br>
+        <input type="radio" name="contact" id="yes" value="yes">
+        <label for="yes">Yes</label>
+        <br>
+        <input type="radio" name="contact" id="no" value="no" checked>
+        <label for="no">No</label>
+        <span id="contactError" class="hide">Error: Yes or No Required</span>
+        <br>
+        <br>
+        <label for="accept">Terms and Conditions</label>
+        <br>
+        <input type="checkbox" name="accept[]" id="accept" value='accept'>
+        <label for="accept"> I Accept</label><br>
+        <span id="acceptError" class="hide">Error: Must Accept to Submit</span>
+        <br>
+        <button id="submit">Submit</button>
+        <!-- <input type="submit" id="submit" value="submit"> -->
+
+
+    </form>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
